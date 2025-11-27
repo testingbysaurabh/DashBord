@@ -1,0 +1,8 @@
+CREATE DATABASE IF NOT EXISTS dashboard_builder;
+USE dashboard_builder;
+
+CREATE TABLE IF NOT EXISTS dashboard_layout (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  layout_json LONGTEXT NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
