@@ -3,7 +3,9 @@ header("Content-Type: application/json");
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Headers: Content-Type");
 
+
 require_once "db.php";
+
 
 $raw = file_get_contents("php://input");
 $data = json_decode($raw, true);
@@ -13,6 +15,7 @@ if (!$data || !isset($data["id"])) {
     echo json_encode(["error" => "Invalid payload"]);
     exit;
 }
+
 
 $id = intval($data["id"]);
 
