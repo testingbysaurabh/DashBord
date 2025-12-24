@@ -6,3 +6,7 @@ CREATE TABLE IF NOT EXISTS dashboard_layout (
   layout_json LONGTEXT NOT NULL,
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+
+
+
